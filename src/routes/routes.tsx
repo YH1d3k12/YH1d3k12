@@ -1,6 +1,6 @@
 import { FC, Suspense } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-// import routes from './LazyRoutes';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import routes from './lazyRoutes';
 import Layout from '../components/layout';
 // import LoadingPage from '../pages/Loading';
 // import NotFoundPage from '../pages/NotFound';
@@ -10,11 +10,11 @@ interface RouteConfig {
     component: FC;
 }
 
-// const LoadRoutes = (routes: RouteConfig[]) => {
-//     return routes.map((route, index) => (
-//         <Route key={index} path={route.path} element={<route.component />} />
-//     ));
-// };
+const LoadRoutes = (routes: RouteConfig[]) => {
+    return routes.map((route, index) => (
+        <Route key={index} path={route.path} element={<route.component />} />
+    ));
+};
 
 export default function AppRoutes() {
     return (
@@ -22,9 +22,9 @@ export default function AppRoutes() {
             {/* <Suspense fallback={<LoadingPage />}> </Suspense>*/}
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    {/* {LoadRoutes(routes)}
-                            <Route path="loading" element={<LoadingPage />} />
-                            <Route path="*" element={<NotFoundPage />} /> */}
+                    {LoadRoutes(routes)}
+                    {/* <Route path="loading" element={<LoadingPage />} /> */}
+                    {/* <Route path="*" element={<NotFoundPage />} /> */}
                 </Route>
             </Routes>
         </BrowserRouter>
