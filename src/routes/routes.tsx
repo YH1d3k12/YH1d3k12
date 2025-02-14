@@ -1,7 +1,7 @@
 import { FC, Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import routes from './lazyRoutes';
-import Layout from '../components/layout';
+import Layout from '../components/A';
 // import LoadingPage from '../pages/Loading';
 // import NotFoundPage from '../pages/NotFound';
 
