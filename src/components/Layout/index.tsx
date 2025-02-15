@@ -6,7 +6,12 @@ export default function Layout() {
     return (
         <div className="pages-layout">
             <Navbar />
-            <Outlet />
+            <main className="pages-content">
+                <div className="pages-section">
+                    <Outlet />
+                    <Outlet />
+                </div>
+            </main>
         </div>
     );
 }

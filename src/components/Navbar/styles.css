@@ -1,3 +1,7 @@
 .navbar-container {
-    height: 100vh;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 300px;
+    width: 80px;
 }
