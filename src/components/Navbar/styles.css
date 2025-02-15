@@ -2,6 +2,27 @@
     position: absolute;
     top: 40%;
     left: 0;
-    height: 300px;
-    width: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+
+.navbar-link-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-link svg {
+    height: 35px;
+    width: 35px;
+    color: whitesmoke;
+}
+
+.navbar-link svg:hover,
+.navbar-link svg:focus,
+.navbar-link svg:active {
+    color: yellow;
 }

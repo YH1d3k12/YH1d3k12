@@ -1,22 +1,32 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import pathOptions from './pathOptions';
 import './styles.css';
 
 export default function Navbar() {
+    const [activePath, setActivePath] = useState<string | null>(null);
+
+    const handleOptionClick = (path: string) => {
+        setActivePath(path);
+    };
+
     return (
         <div className="navbar-container">
-            <nav>
+            <nav className="navbar-link-container">
                 <ul>
-                    <li>
-                        <a href="/home">Home</a>
-                    </li>
-                    <li>
-                        <a href="/">About</a>
-                    </li>
-                    <li>
-                        <a href="/">Projects</a>
-                    </li>
-                    <li>
-                        <a href="/">Contact</a>
-                    </li>
+                    {pathOptions.map(option => (
+                        <li key={option.path}>
+                            <Link
+                                to={option.path}
+                                onClick={() => handleOptionClick(option.path)}
+                                className={`navbar-link ${
+                                    activePath === option.path ? 'active' : ''
+                                }`}
+                            >
+                                {option.icon}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </div>
