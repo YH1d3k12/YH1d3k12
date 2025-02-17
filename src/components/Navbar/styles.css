@@ -23,6 +23,7 @@
 
 .navbar-link svg:hover,
 .navbar-link svg:focus,
-.navbar-link svg:active {
+.navbar-link.active svg {
     color: yellow;
+    scale: 1.05;
 }
