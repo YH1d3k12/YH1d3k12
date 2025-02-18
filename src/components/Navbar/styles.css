@@ -27,3 +27,19 @@
     color: yellow;
     scale: 1.05;
 }
+
+@media screen and (max-width: 1280px) {
+    .navbar-container {
+        width: 40px;
+    }
+
+    .navbar-link-container ul {
+        gap: 10px;
+    }
+
+
+    .navbar-link svg {
+        width: 25px;
+        height: 25px;
+    }
+}

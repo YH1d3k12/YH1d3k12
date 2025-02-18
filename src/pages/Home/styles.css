@@ -35,6 +35,18 @@
     -webkit-text-stroke: 10px black;
 }
 
+.home-midia-links {
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+}
+
+.home-midia-links a svg {
+    width: 35px;
+    height: 35px;
+    fill: #FFFFFF;
+}
+
 @media screen and (max-width: 1536px) {
     .home-title h1 {
         font-size: 4.8rem;
@@ -56,6 +68,11 @@
         font-size: 1.6rem;
         letter-spacing: 2px;
         -webkit-text-stroke: 5px black;
+    }
+
+    .home-midia-links a svg {
+        width: 25px;
+        height: 25px;
     }
 }
 
