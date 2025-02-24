@@ -9,7 +9,6 @@ export default function Layout() {
             <main className="pages-content">
                 <div className="pages-section">
                     <Outlet />
-                    <Outlet />
                 </div>
             </main>
         </div>
