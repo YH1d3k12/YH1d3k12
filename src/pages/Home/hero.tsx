@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import backgroundImage from '../../assets/city.jpg';
 import './styles.css';
 
-function Home() {
+function Hero() {
     return (
-        <div className="page-screen home-page">
-            <img className="home-background-image" src={backgroundImage} />
-            <div className="home-gradient"></div>
-            <div className="home-title">
+        <div className="page-screen hero-page">
+            <img className="hero-background-image" src={backgroundImage} />
+            <div className="hero-gradient"></div>
+            <div className="hero-title">
                 <h1>Djalma Hideki Yamamoto</h1>
                 <p>Fullstack Developer</p>
-                <div className="home-midia-links">
+                <div className="hero-midia-links">
                     <Link to="https://github.com/YH1d3k12">
                         <IoLogoGithub />
                     </Link>
@@ -24,4 +24,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Hero;
