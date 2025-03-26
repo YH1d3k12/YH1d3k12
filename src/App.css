@@ -7,35 +7,15 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  font-size: 62.5%;
 }
 
-html {
-  font-size: 10px;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
-/* #root {
-  width: 100vw;
-  min-height: 100vh;
+.col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: #073068;
-  color: #213547;
 }
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  scrollbar-width: thin;
-}
-
-::-webkit-scrollbar-track {
-  background: #fafafa;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #ff7300;
-  border-radius: 50px;
-} */
