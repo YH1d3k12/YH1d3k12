@@ -100,3 +100,41 @@
         -webkit-text-stroke: 5px black;
     }
 }
+
+/* ===== About ===== */
+.about-page {
+    padding: 40px 8%;
+}
+
+.about-title {
+    justify-content: center;
+}
+
+.about-profile-picture {
+    margin-right: 40px;
+    border: solid 3px #000000;
+    border-radius: 4px;
+    width: 250px;
+    height: 250px;
+    aspect-ratio: 1/1;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.about-text h1 {
+    font-size: 3.8rem;
+    color: black;
+}
+
+.about-text p {
+    font-size: 2rem;
+    color: black;
+}
+
+.about-gallery {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
