@@ -1,28 +1,25 @@
 .pages-layout {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    height: 100vh;
     color: var(--blue);
-}
-
-.pages-content {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
 }
 
 .pages-section {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    overflow-y: auto
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
 }
 
 .page-screen {
     padding: 40px 80px;
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
+    scroll-snap-align: start;
+
 }
 
 @media screen and (max-width: 1024px) {
