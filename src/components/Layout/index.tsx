@@ -6,9 +6,7 @@ export default function Layout() {
     return (
         <div className="pages-layout">
             <Navbar />
-            <div className="pages-section">
-                <Outlet />
-            </div>
+            <Outlet />
         </div>
     );
 }

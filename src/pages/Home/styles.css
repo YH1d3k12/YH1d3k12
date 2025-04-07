@@ -2,7 +2,7 @@
     height: 100vh;
 }
 
-.hero-page {
+.hero-section {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -106,7 +106,7 @@
 }
 
 /* ===== About ===== */
-.about-page {
+.about-section {
     padding: 40px 8%;
 }
 
