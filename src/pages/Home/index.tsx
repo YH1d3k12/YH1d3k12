@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import backgroundImage from '../../assets/city.jpg';
+import backgroundBuildings from '../../assets/cityBuildings.png';
 import profilePicture from '../../assets/profile.jpg';
 import './styles.css';
 
@@ -10,6 +11,10 @@ function Home() {
             {/* ========== Hero Section ==========*/}
             <section className="page-screen hero-section">
                 <img className="hero-background-image" src={backgroundImage} />
+                <img
+                    className="hero-background-buildings"
+                    src={backgroundBuildings}
+                />
                 <div className="hero-gradient"></div>
                 <div className="hero-title">
                     <h1>Djalma Hideki Yamamoto</h1>
