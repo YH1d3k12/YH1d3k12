@@ -3,6 +3,7 @@ import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import backgroundImage from '../../assets/city.jpg';
 import backgroundBuildings from '../../assets/cityBuildings.png';
 import profilePicture from '../../assets/profile.jpg';
+import star from '../../assets/star.png';
 import './styles.css';
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
                     src={backgroundBuildings}
                 />
                 <div className="hero-gradient"></div>
+                <img className="star" src={star} />
                 <div className="hero-title">
                     <h1>Djalma Hideki Yamamoto</h1>
                     <p>Fullstack Developer</p>
