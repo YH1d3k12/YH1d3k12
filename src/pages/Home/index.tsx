@@ -4,6 +4,9 @@ import backgroundImage from '../../assets/city.jpg';
 import backgroundBuildings from '../../assets/cityBuildings.png';
 import profilePicture from '../../assets/profile.jpg';
 import star from '../../assets/star.png';
+import cloud1 from '../../assets/cloud1.png';
+import cloud2 from '../../assets/cloud2.png';
+import cloud3 from '../../assets/cloud3.png';
 import './styles.css';
 
 function Home() {
@@ -17,18 +20,36 @@ function Home() {
                     src={backgroundBuildings}
                 />
                 <div className="hero-gradient"></div>
-                <img className="star" src={star} />
+                <img id="cloud-1" className="clouds" src={cloud1} />
+                <img id="cloud-2" className="clouds" src={cloud2} />
+                <img id="cloud-3" className="clouds" src={cloud3} />
+                <img id="star-1" className="star" src={star} />
+                <img id="star-2" className="star" src={star} />
+                <img id="star-3" className="star" src={star} />
+                <img id="star-4" className="star" src={star} />
+                <img id="star-5" className="star" src={star} />
+                <img id="star-6" className="star" src={star} />
+                <img id="star-7" className="star" src={star} />
+                <div className="subaru-cluster">
+                    <img id="star-alcyone" className="star" src={star} />
+                    <img id="star-merope" className="star" src={star} />
+                    <img id="star-atlas" className="star" src={star} />
+                    <img id="star-pleione" className="star" src={star} />
+                    <img id="star-electra" className="star" src={star} />
+                    <img id="star-taygeta" className="star" src={star} />
+                    <img id="star-caleano" className="star" src={star} />
+                </div>
                 <div className="hero-title">
                     <h1>Djalma Hideki Yamamoto</h1>
                     <p>Fullstack Developer</p>
-                    <div className="hero-midia-links">
+                    {/* <div className="hero-midia-links">
                         <Link to="https://github.com/YH1d3k12">
                             <IoLogoGithub />
                         </Link>
                         <Link to="https://br.linkedin.com/in/yamamoto-hideki">
                             <IoLogoLinkedin />
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             {/* ========== About Section ==========*/}
