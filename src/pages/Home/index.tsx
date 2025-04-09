@@ -7,6 +7,7 @@ import star from '../../assets/star.png';
 import cloud1 from '../../assets/cloud1.png';
 import cloud2 from '../../assets/cloud2.png';
 import cloud3 from '../../assets/cloud3.png';
+import cloud4 from '../../assets/cloud4.png';
 import './styles.css';
 
 function Home() {
@@ -23,6 +24,9 @@ function Home() {
                 <img id="cloud-1" className="clouds" src={cloud1} />
                 <img id="cloud-2" className="clouds" src={cloud2} />
                 <img id="cloud-3" className="clouds" src={cloud3} />
+                <img id="cloud-4" className="clouds" src={cloud4} />
+                <img id="cloud-5" className="clouds" src={cloud2} />
+                <img id="cloud-6" className="clouds" src={cloud4} />
                 <img id="star-1" className="star" src={star} />
                 <img id="star-2" className="star" src={star} />
                 <img id="star-3" className="star" src={star} />

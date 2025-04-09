@@ -70,6 +70,33 @@
     width: 400px;
     height: 250px;
     animation: moveCloud 50s linear infinite;
+    z-index: -2;
+}
+
+#cloud-4 {
+    top: 40%;
+    left: -10%;
+    width: 800px;
+    height: 200px;
+    animation: moveCloud 55s linear infinite;
+    filter: brightness(75%) contrast(120%);
+}
+
+#cloud-5 {
+    top: 35%;
+    left: -50%;
+    width: 400px;
+    height: 200px;
+    animation: moveCloud 60s linear infinite;
+}
+
+#cloud-6 {
+    top: 40%;
+    left: -50%;
+    width: 600px;
+    height: 150px;
+    animation: moveCloud 65s linear infinite;
+    transform: scaleX(-1);
 }
 
 @keyframes moveCloud {
