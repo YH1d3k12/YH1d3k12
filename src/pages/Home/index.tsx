@@ -1,100 +1,12 @@
-import { Link } from 'react-router-dom';
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
-import backgroundImage from '../../assets/city.jpg';
-import backgroundBuildings from '../../assets/cityBuildings.png';
-import profilePicture from '../../assets/profile.jpg';
-import star from '../../assets/star.png';
-import cloud1 from '../../assets/cloud1.png';
-import cloud2 from '../../assets/cloud2.png';
-import cloud3 from '../../assets/cloud3.png';
-import cloud4 from '../../assets/cloud4.png';
+import Hero from './hero';
+import About from './about';
 import './styles.css';
 
 function Home() {
     return (
         <main className="pages-section home-page">
-            {/* ========== Hero Section ==========*/}
-            <section className="page-screen hero-section">
-                <img className="hero-background-image" src={backgroundImage} />
-                <img
-                    className="hero-background-buildings"
-                    src={backgroundBuildings}
-                />
-                <div className="hero-gradient"></div>
-                <img id="cloud-1" className="clouds" src={cloud1} />
-                <img id="cloud-2" className="clouds" src={cloud2} />
-                <img id="cloud-3" className="clouds" src={cloud3} />
-                <img id="cloud-4" className="clouds" src={cloud4} />
-                <img id="cloud-5" className="clouds" src={cloud2} />
-                <img id="cloud-6" className="clouds" src={cloud4} />
-                <img id="star-1" className="star" src={star} />
-                <img id="star-2" className="star" src={star} />
-                <img id="star-3" className="star" src={star} />
-                <img id="star-4" className="star" src={star} />
-                <img id="star-5" className="star" src={star} />
-                <img id="star-6" className="star" src={star} />
-                <img id="star-7" className="star" src={star} />
-                <div className="subaru-cluster">
-                    <img id="star-alcyone" className="star" src={star} />
-                    <img id="star-merope" className="star" src={star} />
-                    <img id="star-atlas" className="star" src={star} />
-                    <img id="star-pleione" className="star" src={star} />
-                    <img id="star-electra" className="star" src={star} />
-                    <img id="star-taygeta" className="star" src={star} />
-                    <img id="star-caleano" className="star" src={star} />
-                </div>
-                <div className="hero-title">
-                    <h1>Djalma Hideki Yamamoto</h1>
-                    <p>Fullstack Developer</p>
-                    {/* <div className="hero-midia-links">
-                        <Link to="https://github.com/YH1d3k12">
-                            <IoLogoGithub />
-                        </Link>
-                        <Link to="https://br.linkedin.com/in/yamamoto-hideki">
-                            <IoLogoLinkedin />
-                        </Link>
-                    </div> */}
-                </div>
-            </section>
-            {/* ========== About Section ==========*/}
-            <section className="page-screen about-section">
-                <div className="about-title row">
-                    <img
-                        className="about-profile-picture"
-                        src={profilePicture}
-                        alt="Profile Photo"
-                    />
-                    <div className="about-text col">
-                        <h1>Sobre</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nullam ac viverra arcu. Duis volutpat lorem eu
-                            tortor commodo, ut tempor libero sodales. Donec
-                            tincidunt ultrices erat. Aliquam erat volutpat. In
-                            hac habitasse platea dictumst. Vivamus mauris nulla,
-                            vulputate eget ex tristique, mollis finibus libero.
-                            Sed augue enim, aliquam et mauris non, porta
-                            tincidunt lectus. Pellentesque vestibulum risus id
-                            consequat finibus. Sed varius dignissim dui, eget
-                            ornare diam sodales vel.
-                            <br />
-                            <br />
-                            Donec nisl lacus, bibendum ut tellus et, rhoncus
-                            maximus lacus. Vestibulum ullamcorper ac ex vitae
-                            ultricies. Vestibulum sagittis id mauris nec
-                            volutpat. Proin luctus ultrices egestas. Donec eget
-                            pellentesque erat, fermentum vehicula sapien.
-                            Quisque egestas mi vel justo ullamcorper
-                            pellentesque. Integer sodales condimentum ipsum, nec
-                            sagittis nisl ornare ac. Vestibulum auctor ut mi
-                            aliquam hendrerit.
-                        </p>
-                    </div>
-                </div>
-                <div className="about-gallery">
-                    <h1>GALLERY</h1>
-                </div>
-            </section>
+            <Hero />
+            <About />
         </main>
     );
 }

@@ -2,6 +2,7 @@
     height: 100vh;
 }
 
+/* ===== hero ===== */
 .hero-section {
     position: relative;
     display: flex;
@@ -291,29 +292,33 @@
     flex-direction: column;
     padding: 0 10%;
     width: 100%;
-    font-family: "Raleway", serif;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
     z-index: 99;
 }
 
 .hero-title h1 {
-    color: #FFFFFF;
-    font-size: 4.8rem;
+    font-size: 5.4rem;
     font-weight: 700;
-    letter-spacing: 5px;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    paint-order: stroke fill;
-    -webkit-text-stroke: 5px black;
+}
+
+.hero-title h1 span {
+    color: #ff2975;
+    font-size: 5.4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .hero-title p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.hero-title p span {
     color: #FFE228;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 900;
     letter-spacing: 5px;
-    paint-order: stroke fill;
-    font-family: "League Spartan", sans-serif;
-    -webkit-text-stroke: 5px black;
 }
 
 .hero-midia-links {
@@ -337,14 +342,10 @@
 @media screen and (max-width: 1536px) {
     .hero-title h1 {
         font-size: 3.2rem;
-        letter-spacing: 2px;
-        -webkit-text-stroke: 5px black;
     }
 
     .hero-title p {
         font-size: 1.4rem;
-        letter-spacing: 2px;
-        -webkit-text-stroke: 5px black;
     }
 }
 
@@ -355,14 +356,10 @@
 
     .hero-title h1 {
         font-size: 2.15rem;
-        letter-spacing: 2px;
-        -webkit-text-stroke: 5px black;
     }
 
     .hero-title p {
         font-size: 0.9rem;
-        letter-spacing: 2px;
-        -webkit-text-stroke: 5px black;
     }
 }
 
@@ -375,10 +372,7 @@
 /* ===== About ===== */
 .about-section {
     padding: 40px 8%;
-}
-
-.about-title {
-    justify-content: center;
+    background: linear-gradient(150deg, #010009 10%, #291b72 100%);
 }
 
 .about-profile-picture {
@@ -391,21 +385,22 @@
 }
 
 .about-text {
+    color: #fff;
+    font-size: 2rem;
     text-align: justify;
 }
 
-.about-text h1 {
-    font-size: 3.8rem;
-    color: black;
-}
-
-.about-text p {
+li {
+    color: #fff;
     font-size: 2rem;
-    color: black;
 }
 
-.about-gallery {
-    flex: 1;
-    width: 100%;
-    background-color: red;
+.about-key-info {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.about-tech-list {
+    font-size: 2rem;
+    color: #fff;
 }
