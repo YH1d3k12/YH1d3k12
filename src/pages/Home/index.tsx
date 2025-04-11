@@ -4,7 +4,7 @@ import './styles.css';
 
 function Home() {
     return (
-        <main className="pages-section home-page">
+        <main className="home-page">
             <Hero />
             <About />
         </main>
