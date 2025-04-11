@@ -4,7 +4,7 @@ import './styles.css';
 
 export default function Layout() {
     return (
-        <div className="pages-layout">
+        <div className="layout">
             <Navbar />
             <Outlet />
         </div>
