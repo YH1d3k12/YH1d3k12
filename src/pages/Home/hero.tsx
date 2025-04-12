@@ -18,27 +18,27 @@ function Hero() {
                 src={backgroundBuildings}
             />
             <div className="hero-gradient"></div>
-            <img id="cloud-1" className="clouds" src={cloud1} />
-            <img id="cloud-2" className="clouds" src={cloud2} />
-            <img id="cloud-3" className="clouds" src={cloud3} />
-            <img id="cloud-4" className="clouds" src={cloud4} />
-            <img id="cloud-5" className="clouds" src={cloud2} />
-            <img id="cloud-6" className="clouds" src={cloud4} />
-            <img id="star-1" className="star" src={star} />
-            <img id="star-2" className="star" src={star} />
-            <img id="star-3" className="star" src={star} />
-            <img id="star-4" className="star" src={star} />
-            <img id="star-5" className="star" src={star} />
-            <img id="star-6" className="star" src={star} />
-            <img id="star-7" className="star" src={star} />
+            <img id="cloud-1" className="clouds no-select" src={cloud1} />
+            <img id="cloud-2" className="clouds no-select" src={cloud2} />
+            <img id="cloud-3" className="clouds no-select" src={cloud3} />
+            <img id="cloud-4" className="clouds no-select" src={cloud4} />
+            <img id="cloud-5" className="clouds no-select" src={cloud2} />
+            <img id="cloud-6" className="clouds no-select" src={cloud4} />
+            <img id="star-1" className="star no-select" src={star} />
+            <img id="star-2" className="star no-select" src={star} />
+            <img id="star-3" className="star no-select" src={star} />
+            <img id="star-4" className="star no-select" src={star} />
+            <img id="star-5" className="star no-select" src={star} />
+            <img id="star-6" className="star no-select" src={star} />
+            <img id="star-7" className="star no-select" src={star} />
             <div className="subaru-cluster">
-                <img id="star-alcyone" className="star" src={star} />
-                <img id="star-merope" className="star" src={star} />
-                <img id="star-atlas" className="star" src={star} />
-                <img id="star-pleione" className="star" src={star} />
-                <img id="star-electra" className="star" src={star} />
-                <img id="star-taygeta" className="star" src={star} />
-                <img id="star-caleano" className="star" src={star} />
+                <img id="star-alcyone" className="star no-select" src={star} />
+                <img id="star-merope" className="star no-select" src={star} />
+                <img id="star-atlas" className="star no-select" src={star} />
+                <img id="star-pleione" className="star no-select" src={star} />
+                <img id="star-electra" className="star no-select" src={star} />
+                <img id="star-taygeta" className="star no-select" src={star} />
+                <img id="star-caleano" className="star no-select" src={star} />
             </div>
             <div className="hero-title">
                 <h1>
