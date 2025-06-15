@@ -1,4 +1,4 @@
-.hero-section {
+.city-landscape-section {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-.hero-gradient {
+.city-landscape-gradient {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
     z-index: -1;
 }
 
-.hero-background-image {
+.city-landscape-background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +28,7 @@
     z-index: -3;
 }
 
-.hero-background-buildings {
+.city-landscape-background-buildings {
     position: absolute;
     top: 0;
     left: 0;
@@ -282,7 +282,7 @@
     }
 }
 
-.hero-title {
+.city-landscape-title {
     display: flex;
     flex-direction: column;
     padding: 0 10%;
@@ -292,61 +292,61 @@
     z-index: 99;
 }
 
-.hero-title h1 {
+.city-landscape-title h1 {
     font-size: 6.4rem;
     font-weight: 700;
 }
 
-.hero-title h1 span {
+.city-landscape-title h1 span {
     color: #ff2975;
     font-size: 6.4rem;
     font-weight: 900;
     letter-spacing: 2px;
 }
 
-.hero-title p {
+.city-landscape-title p {
     font-size: 1.6rem;
     font-weight: 700;
 }
 
-.hero-title p span {
+.city-landscape-title p span {
     color: #FFE228;
     font-size: 1.6rem;
     font-weight: 900;
 }
 
-.hero-midia-links {
+.city-landscape-midia-links {
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
 
-.hero-midia-links a svg {
+.city-landscape-midia-links a svg {
     width: 25px;
     height: 25px;
     fill: #FFFFFF;
 }
 
-.hero-midia-links svg:hover,
-.hero-midia-links svg:focus {
+.city-landscape-midia-links svg:hover,
+.city-landscape-midia-links svg:focus {
     scale: 1.1;
     cursor: pointer;
 }
 
 @media screen and (max-width: 1536px) {
-    .hero-title h1 {
+    .city-landscape-title h1 {
         font-size: 5.6rem;
     }
 
-    .hero-title h1 span {
+    .city-landscape-title h1 span {
         font-size: 5.6rem;
     }
 
-    .hero-title p {
+    .city-landscape-title p {
         font-size: 1.4rem;
     }
 
-    .hero-title p span {
+    .city-landscape-title p span {
         font-size: 1.4rem;
     }
 }
@@ -356,21 +356,21 @@
         scale: 0.5;
     }
 
-    .hero-title h1 {
+    .city-landscape-title h1 {
         font-size: 1.6rem;
         text-align: right;
     }
 
-    .hero-title h1 span {
+    .city-landscape-title h1 span {
         font-size: 4.8rem;
     }
 
-    .hero-title p {
+    .city-landscape-title p {
         font-size: 1.2rem;
         text-align: right;
     }
 
-    .hero-title p span {
+    .city-landscape-title p span {
         font-size: 1.2rem;
     }
 }

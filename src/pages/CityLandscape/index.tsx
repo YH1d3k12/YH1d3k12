@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import backgroundImage from '../../assets/city.jpg';
 import backgroundBuildings from '../../assets/cityBuildings.png';
 import star from '../../assets/star.png';
@@ -7,17 +5,20 @@ import cloud1 from '../../assets/cloud1.png';
 import cloud2 from '../../assets/cloud2.png';
 import cloud3 from '../../assets/cloud3.png';
 import cloud4 from '../../assets/cloud4.png';
-import './hero.css';
+import './styles.css';
 
-function Hero() {
+function CityLandscape() {
     return (
-        <section className="page-screen hero-section">
-            <img className="hero-background-image" src={backgroundImage} />
+        <section className="page-screen city-landscape-section">
             <img
-                className="hero-background-buildings"
+                className="city-landscape-background-image"
+                src={backgroundImage}
+            />
+            <img
+                className="city-landscape-background-buildings"
                 src={backgroundBuildings}
             />
-            <div className="hero-gradient"></div>
+            <div className="city-landscape-gradient"></div>
             <img id="cloud-1" className="clouds no-select" src={cloud1} />
             <img id="cloud-2" className="clouds no-select" src={cloud2} />
             <img id="cloud-3" className="clouds no-select" src={cloud3} />
@@ -40,24 +41,16 @@ function Hero() {
                 <img id="star-taygeta" className="star no-select" src={star} />
                 <img id="star-caleano" className="star no-select" src={star} />
             </div>
-            <div className="hero-title">
+            <div className="city-landscape-title">
                 <h1>
                     I'm <span>Djalma</span>
                 </h1>
                 <p>
                     a <span>Fullstack Developer</span>
                 </p>
-                {/* <div className="hero-midia-links">
-                <Link to="https://github.com/YH1d3k12">
-                    <IoLogoGithub />
-                </Link>
-                <Link to="https://br.linkedin.com/in/yamamoto-hideki">
-                    <IoLogoLinkedin />
-                </Link>
-            </div> */}
             </div>
         </section>
     );
 }
 
-export default Hero;
+export default CityLandscape;
