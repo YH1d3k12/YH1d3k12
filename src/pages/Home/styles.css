@@ -3,36 +3,7 @@
     width: 100%;
 }
 
-.about-section {
-    background: linear-gradient(150deg, #010009 10%, #291b72 100%);
-}
-
-.about-profile-picture {
-    margin-right: 40px;
-    border: solid 3px #000000;
-    border-radius: 4px;
-    width: 250px;
-    height: 250px;
-    aspect-ratio: 1/1;
-}
-
-.about-text {
-    color: #fff;
-    font-size: 2rem;
-    text-align: justify;
-}
-
 li {
     color: #fff;
     font-size: 2rem;
-}
-
-.about-key-info {
-    font-size: 2rem;
-    color: #fff;
-}
-
-.about-tech-list {
-    font-size: 2rem;
-    color: #fff;
 }
