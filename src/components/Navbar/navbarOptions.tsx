@@ -12,27 +12,27 @@ export interface MenuOption {
     path: string;
 }
 
-const pathOptions: MenuOption[] = [
+const navbarOptions: MenuOption[] = [
     {
         title: 'Home',
-        path: '/home',
+        path: '/',
         icon: <IoHome />,
     },
     {
-        title: 'Projects',
-        path: '/projects',
-        icon: <IoImagesSharp />,
-    },
-    {
         title: 'About',
-        path: '/about',
+        path: '/',
         icon: <IoPersonSharp />,
     },
     {
+        title: 'Projects',
+        path: '/',
+        icon: <IoImagesSharp />,
+    },
+    {
         title: 'Contact',
-        path: '/contact',
+        path: '/',
         icon: <IoCallSharp />,
     },
 ];
 
-export default pathOptions;
+export default navbarOptions;

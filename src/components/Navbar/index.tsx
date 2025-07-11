@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import pathOptions from './pathOptions';
+import navbarOptions from './navbarOptions';
 import './styles.css';
 
 export default function Navbar() {
@@ -44,14 +44,14 @@ export default function Navbar() {
             <nav className="navbar">
                 <div className="navbar-title">Djalma Hideki Yamamoto</div>
                 <div className="navbar-links">
-                    {pathOptions.map(option => (
-                        <Link
+                    {navbarOptions.map(option => (
+                        <button
                             key={option.title}
-                            to={option.path}
                             className="navbar-link"
+                            onClick={() => scrollToSection(option.path)}
                         >
                             {option.title}
-                        </Link>
+                        </button>
                     ))}
                 </div>
                 <div className="navbar-burguer-container">
@@ -72,9 +72,14 @@ export default function Navbar() {
                     }
                     ${isScrolled ? 'scrolled' : ''}`}
                 >
-                    {pathOptions.map(option => (
+                    {navbarOptions.map(option => (
                         <li key={option.title}>
-                            <Link to={option.path}>{option.title}</Link>
+                            <button
+                                onClick={() => scrollToSection(option.path)}
+                            >
+                                {option.icon}
+                                {option.title}
+                            </button>
                         </li>
                     ))}
                 </ul>

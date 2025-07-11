@@ -34,9 +34,11 @@
 }
 
 .navbar-link {
+    background-color: transparent;
     color: var(--gray);
     font-size: 1.6rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .navbar-link:hover {
@@ -108,18 +110,26 @@
     box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
-.navbar-burguer-links li {
-    padding: 12px 24px;
-}
-
-.navbar-burguer-links li a {
+.navbar-burguer-links li button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
     width: 100%;
+    padding: 12px 16px;
+    background-color: transparent;
     color: var(--gray);
     font-size: 1.6rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
-.navbar-burguer-links li a:hover {
+.navbar-burguer-links li button svg {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.navbar-burguer-links li button:hover {
     color: var(--royal-blue);
 }
 
