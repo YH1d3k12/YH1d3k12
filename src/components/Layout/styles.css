@@ -1,24 +1,17 @@
 .layout {
     position: relative;
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100vw;
-    color: var(--blue);
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
+    flex-direction: column;
+    height: 200vh;
+    overflow-y: visible;
 }
 
-.page-screen {
+.page-padding {
     padding: 40px 8%;
-    height: 100%;
-    width: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
 }
 
 @media screen and (max-width: 1024px) {
-    .page-screen {
+    .page-padding {
         padding: 40px 20px;
     }
 }
