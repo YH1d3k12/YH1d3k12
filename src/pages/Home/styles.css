@@ -1,42 +1,4 @@
 .home-page {
-    min-height: 360px;
-    height: 100%;
-    max-height: 75vh;
     width: 100%;
-    background-color: rgb(252, 252, 252);
-}
-
-.home-hero {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.home-hero-text {
-    width: 50%;
-    max-width: 420px;
-    border-radius: 8px;
-    border: solid 1px var(--gray);
-    padding: 12px 16px;
-    background-color: rgba(240, 248, 255, 0.096);
-    backdrop-filter: blur(24px);
-}
-
-.home-hero-text h1 {
-    font-size: 6.4rem;
-}
-
-.home-hero-text h2 {
-    margin-bottom: 12px;
-    font-size: 2rem;
-}
-
-.home-hero-text p {
-    font-size: 1.6rem;
-}
-
-.home-hero-img img {
-    height: 420px;
-    width: 420px;
-    object-fit: contain;
+    background-color: rgb(223, 62, 62);
 }
