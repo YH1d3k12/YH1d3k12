@@ -1,4 +1,6 @@
+import processor from '../../assets/processor.svg';
 import photo from '../../assets/photo.jpg';
+import d20 from '../../assets/d20.svg';
 import './styles.css';
 
 export default function AboutSection() {
@@ -19,7 +21,14 @@ export default function AboutSection() {
                 <p>Joinville, SC - Brazil</p>
             </div>
             <div className="about-section-img">
-                <img src={photo} alt="" />
+                <img className="about-photo" src={photo} alt="" />
+                <img id="d20" className="about-bg-icon" src={d20} alt="D20" />
+                <img
+                    id="processor"
+                    className="about-bg-icon"
+                    src={processor}
+                    alt="Processor"
+                />
             </div>
         </section>
     );

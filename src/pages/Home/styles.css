@@ -1,4 +1,5 @@
 .home-page {
     width: 100%;
-    background-color: rgb(223, 62, 62);
+    background-color: var(--white);
+    overflow-x: hidden;
 }
