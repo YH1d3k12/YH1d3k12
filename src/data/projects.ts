@@ -1,5 +1,8 @@
 import { Project } from '../services/project';
 import placeholder from '../assets/gallery/placeholder.svg';
+import a from '../assets/gallery/a.jpg';
+import b from '../assets/gallery/b.jpeg';
+import c from '../assets/gallery/c.jpeg';
 
 const projects: Project[] = [
     {
@@ -20,11 +23,7 @@ const projects: Project[] = [
         ],
         githubUrl: 'https://github.com/',
         liveUrl: 'https://youtube.com/',
-        gallery: [
-            '/placeholder.svg?height=300&width=500',
-            '/placeholder.svg?height=300&width=500',
-            '/placeholder.svg?height=300&width=500',
-        ],
+        gallery: [a, b, c],
     },
 ];
 

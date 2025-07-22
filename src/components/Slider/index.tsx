@@ -29,12 +29,9 @@ export default function Slider({ slides = [] }: SliderProps) {
                     <img
                         key={index}
                         src={slide}
-                        alt=""
+                        alt="slide image"
                         className={index === currentSlide ? 'active' : ''}
                         style={{ opacity: index === currentSlide ? 1 : 0 }}
-                        onClick={() =>
-                            console.log('clicked image', currentSlide)
-                        }
                     />
                 ))}
             </div>
