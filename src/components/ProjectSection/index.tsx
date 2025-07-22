@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ProjectCard from '../ProjectCard';
 import projects from '../../data/projects';
 import './styles.css';
+import ProjectModal from '../ProjectModal';
 
 const allTags = Array.from(new Set(projects.flatMap(project => project.tags)));
 
@@ -59,12 +60,16 @@ export default function ProjectSection() {
                     <ProjectCard
                         key={project.id}
                         project={project}
-                        onClick={() =>
-                            console.log('clicked project', project.title)
-                        }
+                        onClick={() => setSelectedProject(project)}
                     />
                 ))}
             </div>
+            {selectedProject && (
+                <ProjectModal
+                    project={selectedProject}
+                    onClose={() => setSelectedProject(null)}
+                />
+            )}
         </section>
     );
 }
