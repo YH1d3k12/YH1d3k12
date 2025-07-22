@@ -25,6 +25,66 @@ const projects: Project[] = [
         liveUrl: 'https://youtube.com/',
         gallery: [a, b, c],
     },
+    {
+        id: 2,
+        title: 'E-commerce Platform',
+        description:
+            'Plataforma completa de e-commerce com painel administrativo',
+        image: placeholder,
+        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+        detailedDescription:
+            'Uma plataforma de e-commerce completa desenvolvida com React e Node.js, incluindo sistema de pagamentos, gerenciamento de produtos, carrinho de compras e painel administrativo.',
+        features: [
+            'Sistema de autenticação completo',
+            'Integração com gateway de pagamento',
+            'Painel administrativo para gerenciar produtos',
+            'Carrinho de compras persistente',
+            'Sistema de avaliações e comentários',
+        ],
+        githubUrl: 'https://github.com/',
+        liveUrl: 'https://youtube.com/',
+        gallery: [a, b, c],
+    },
+    {
+        id: 3,
+        title: 'E-commerce Platform',
+        description:
+            'Plataforma completa de e-commerce com painel administrativo',
+        image: placeholder,
+        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+        detailedDescription:
+            'Uma plataforma de e-commerce completa desenvolvida com React e Node.js, incluindo sistema de pagamentos, gerenciamento de produtos, carrinho de compras e painel administrativo.',
+        features: [
+            'Sistema de autenticação completo',
+            'Integração com gateway de pagamento',
+            'Painel administrativo para gerenciar produtos',
+            'Carrinho de compras persistente',
+            'Sistema de avaliações e comentários',
+        ],
+        githubUrl: 'https://github.com/',
+        liveUrl: 'https://youtube.com/',
+        gallery: [a, b, c],
+    },
+    {
+        id: 4,
+        title: 'E-commerce Platform',
+        description:
+            'Plataforma completa de e-commerce com painel administrativo',
+        image: placeholder,
+        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+        detailedDescription:
+            'Uma plataforma de e-commerce completa desenvolvida com React e Node.js, incluindo sistema de pagamentos, gerenciamento de produtos, carrinho de compras e painel administrativo.',
+        features: [
+            'Sistema de autenticação completo',
+            'Integração com gateway de pagamento',
+            'Painel administrativo para gerenciar produtos',
+            'Carrinho de compras persistente',
+            'Sistema de avaliações e comentários',
+        ],
+        githubUrl: 'https://github.com/',
+        liveUrl: 'https://youtube.com/',
+        gallery: [a, b, c],
+    },
 ];
 
 export default projects;
