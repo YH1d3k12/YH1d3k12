@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ProjectCard from '../ProjectCard';
 import projects from '../../data/projects';
 import './styles.css';
 
@@ -6,6 +7,16 @@ const allTags = Array.from(new Set(projects.flatMap(project => project.tags)));
 
 export default function ProjectSection() {
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
+    const [selectedProject, setSelectedProject] = useState<
+        (typeof projects)[0] | null
+    >(null);
+
+    const filteredProjects =
+        selectedTags.length === 0
+            ? projects
+            : projects.filter(project =>
+                  selectedTags.some(tag => project.tags.includes(tag))
+              );
 
     const toggleTag = (tag: string) => {
         setSelectedTags(prev =>
@@ -44,9 +55,15 @@ export default function ProjectSection() {
                 </div>
             </div>
             <div className="project-section-container">
-                <div>
-                    <h3>card 1</h3>
-                </div>
+                {filteredProjects.map((project, _) => (
+                    <ProjectCard
+                        key={project.id}
+                        project={project}
+                        onClick={() =>
+                            console.log('clicked project', project.title)
+                        }
+                    />
+                ))}
             </div>
         </section>
     );
