@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 50px;
 }
 
 .about-section-text {
@@ -111,12 +110,10 @@
         flex-direction: column-reverse;
         align-items: center;
         gap: 30px;
-        padding: 15px;
     }
 
     .about-section-text {
         width: 100%;
         max-width: 100vw;
     }
-
 }

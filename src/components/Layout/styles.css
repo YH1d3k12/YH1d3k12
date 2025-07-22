@@ -6,12 +6,12 @@
     overflow-y: visible;
 }
 
-.page-padding {
-    padding: 40px 8%;
+.section-padding {
+    padding: 40px calc(8% + 50px);
 }
 
 @media screen and (max-width: 1024px) {
-    .page-padding {
+    .section-padding {
         padding: 40px 20px;
     }
 }
