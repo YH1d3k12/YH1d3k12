@@ -8,6 +8,7 @@
   --royal-blue: #305CDE;
   --white: #FFFEFE;
   --poppy: #df3e3e;
+  --gun-metal: #2B3137;
 }
 
 * {
@@ -16,7 +17,7 @@
   border: 0;
   margin: 0;
   text-decoration: none;
-  list-style: none;
+  /* list-style: none; */
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
 }

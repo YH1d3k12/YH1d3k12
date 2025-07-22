@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import ProjectCard from '../ProjectCard';
+import ProjectModal from '../ProjectModal';
 import projects from '../../data/projects';
 import './styles.css';
-import ProjectModal from '../ProjectModal';
 
 const allTags = Array.from(new Set(projects.flatMap(project => project.tags)));
 

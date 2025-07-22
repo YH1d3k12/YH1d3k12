@@ -58,6 +58,75 @@
     max-height: 320px;
 }
 
+.project-modal-content {
+    display: flex;
+}
+
+.project-modal-content h3 {
+    margin: 20px 0 10px 0;
+    color: var(--night);
+    font-size: 2rem;
+}
+
+.project-modal-content p {
+    color: var(--gray);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.project-modal-content ul {
+    padding-left: 20px;
+    list-style: circle;
+    color: var(--royal-blue);
+}
+
+.project-modal-content ul li {
+    color: var(--gray);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.pmc-separator {
+    width: 50%;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 80%;
+    height: 50px;
+
+    color: var(--white);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+#github-link {
+    background-color: var(--gun-metal);
+}
+
+#live-link {
+    background-color: var(--royal-blue);
+}
+
+@media screen and (max-width: 768px) {
+    .project-modal-content {
+        flex-direction: column;
+    }
+
+    .pmc-separator {
+        width: 100%;
+    }
+
+    .project-link {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .project-modal {
         padding: 10px 20px;

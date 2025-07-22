@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
+import { IoClose, IoLogoGithub, IoDesktopSharp } from 'react-icons/io5';
 import { Project } from '../../services/project';
 import Slider from '../Slider';
-import { IoClose } from 'react-icons/io5';
 import './styles.css';
 
 interface ProjectModalProps {
@@ -10,8 +9,6 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
     return (
         <div className="modal-veil">
             <div className="project-modal">
@@ -22,20 +19,48 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </button>
                 </div>
                 <div className="project-modal-gallery">
-                    <Slider />
+                    <Slider slides={project.gallery} />
                 </div>
                 <div className="project-modal-content">
-                    <div>
-                        <h3>About</h3>
-                        <p>{project.detailedDescription}</p>
+                    <div className="col pmc-separator">
+                        <div>
+                            <h3>About</h3>
+                            <p>{project.detailedDescription}</p>
+                        </div>
+                        <div>
+                            <h3>Features</h3>
+                            <ul>
+                                {project.features.map((feature, index) => (
+                                    <li key={index}>{feature}</li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Features</h3>
-                        <ul>
-                            {project.features.map((feature, index) => (
-                                <li key={index}>{feature}</li>
-                            ))}
-                        </ul>
+                    <div className="pmc-separator">
+                        {project.githubUrl && (
+                            <a
+                                href={project.githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                                id="github-link"
+                            >
+                                <IoLogoGithub size={24} />
+                                GitHub
+                            </a>
+                        )}
+                        {project.liveUrl && (
+                            <a
+                                href={project.liveUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                                id="live-link"
+                            >
+                                <IoDesktopSharp size={24} />
+                                Live Demo
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>
