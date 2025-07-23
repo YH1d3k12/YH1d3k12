@@ -21,8 +21,8 @@ const projects: Project[] = [
             'Carrinho de compras persistente',
             'Sistema de avaliações e comentários',
         ],
-        githubUrl: 'https://github.com/',
-        liveUrl: 'https://youtube.com/',
+        githubUrl: '',
+        liveUrl: '',
         gallery: [a, b, c],
     },
     {

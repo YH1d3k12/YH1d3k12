@@ -2,8 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 200vh;
-    overflow-y: visible;
+    min-height: 100vh;
 }
 
 .section-padding {

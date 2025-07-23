@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     gap: 50px;
+    overflow: hidden;
 }
 
 .about-section-text {
@@ -23,6 +24,7 @@
 }
 
 .about-section-text p {
+    margin-top: 15px;
     font-size: 1.8rem;
 }
 

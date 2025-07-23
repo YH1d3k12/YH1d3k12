@@ -14,23 +14,18 @@ export interface MenuOption {
 
 const navbarOptions: MenuOption[] = [
     {
-        title: 'Home',
-        path: '/',
-        icon: <IoHome />,
-    },
-    {
         title: 'About',
-        path: '/',
+        path: 'about',
         icon: <IoPersonSharp />,
     },
     {
         title: 'Projects',
-        path: '/',
+        path: 'project',
         icon: <IoImagesSharp />,
     },
     {
         title: 'Contact',
-        path: '/',
+        path: 'contact',
         icon: <IoCallSharp />,
     },
 ];

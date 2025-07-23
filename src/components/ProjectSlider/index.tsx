@@ -12,7 +12,7 @@ export default function ProjectSlider({
     onProjectClick: (project: Project) => void;
 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [cardsPerPage, setCardsPerPage] = useState(3);
+    const [cardsPerPage, setCardsPerPage] = useState(4);
     const maxIndex = Math.max(0, projects.length - cardsPerPage);
 
     useEffect(() => {
@@ -39,8 +39,10 @@ export default function ProjectSlider({
                 setCardsPerPage(1);
             } else if (width <= 1280) {
                 setCardsPerPage(2);
-            } else {
+            } else if (width <= 1600) {
                 setCardsPerPage(3);
+            } else {
+                setCardsPerPage(4);
             }
         }
         handleResize();

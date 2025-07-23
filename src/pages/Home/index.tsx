@@ -4,10 +4,10 @@ import './styles.css';
 
 function Home() {
     return (
-        <main className="home-page">
+        <>
             <AboutSection />
             <ProjectSection />
-        </main>
+        </>
     );
 }
 

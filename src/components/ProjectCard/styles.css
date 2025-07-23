@@ -1,8 +1,8 @@
 .project-card {
     border-radius: 8px;
     background-color: rgb(255, 255, 255);
-    height: 360px;
-    width: 280px;
+    height: 340px;
+    width: 260px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -34,7 +34,7 @@
 
 .project-card-content h3 {
     color: var(--night);
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -56,4 +56,19 @@
     background-color: var(--royal-blue);
     color: var(--white);
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 640px) {
+    .project-card {
+        height: 300px;
+        width: 220px;
+    }
+
+    .project-card-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .project-card-content p {
+        font-size: 1.2rem;
+    }
 }

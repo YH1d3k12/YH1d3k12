@@ -36,32 +36,34 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                             </ul>
                         </div>
                     </div>
-                    <div className="pmc-separator">
-                        {project.githubUrl && (
-                            <a
-                                href={project.githubUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="project-link"
-                                id="github-link"
-                            >
-                                <IoLogoGithub size={24} />
-                                GitHub
-                            </a>
-                        )}
-                        {project.liveUrl && (
-                            <a
-                                href={project.liveUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="project-link"
-                                id="live-link"
-                            >
-                                <IoDesktopSharp size={24} />
-                                Live Demo
-                            </a>
-                        )}
-                    </div>
+                    {(project.githubUrl || project.liveUrl) && (
+                        <div className="pmc-separator">
+                            {project.githubUrl && (
+                                <a
+                                    href={project.githubUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-link"
+                                    id="github-link"
+                                >
+                                    <IoLogoGithub size={24} />
+                                    GitHub
+                                </a>
+                            )}
+                            {project.liveUrl && (
+                                <a
+                                    href={project.liveUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-link"
+                                    id="live-link"
+                                >
+                                    <IoDesktopSharp size={24} />
+                                    Live Demo
+                                </a>
+                            )}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

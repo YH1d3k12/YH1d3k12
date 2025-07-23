@@ -5,7 +5,7 @@ import './styles.css';
 
 export default function AboutSection() {
     return (
-        <section className="about-section section-padding">
+        <section id="about" className="about-section section-padding">
             <div className="about-section-text">
                 <h1>I'm Djalma</h1>
                 <h2>Fullstack Developer</h2>

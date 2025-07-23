@@ -26,7 +26,7 @@ export default function ProjectSection() {
     };
 
     return (
-        <section className="project-section section-padding">
+        <section id="project" className="project-section section-padding">
             <div className="project-section-text">
                 <h2>My Projects</h2>
                 <p>

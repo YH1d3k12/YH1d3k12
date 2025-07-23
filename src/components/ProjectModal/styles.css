@@ -87,7 +87,7 @@
 }
 
 .pmc-separator {
-    width: 50%;
+    width: 100%;
 }
 
 .project-link {
@@ -116,10 +116,6 @@
 @media screen and (max-width: 768px) {
     .project-modal-content {
         flex-direction: column;
-    }
-
-    .pmc-separator {
-        width: 100%;
     }
 
     .project-link {

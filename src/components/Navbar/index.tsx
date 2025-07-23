@@ -29,7 +29,9 @@ export default function Navbar() {
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const yOffset = -80;
+            const y = element.getBoundingClientRect().top + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
             setIsMobileMenuOpen(false);
         }
     };
@@ -68,8 +70,7 @@ export default function Navbar() {
                 <ul
                     className={`navbar-burguer-links ${
                         isMobileMenuOpen ? 'open' : ''
-                    }
-                    ${isScrolled ? 'scrolled' : ''}`}
+                    }`}
                 >
                     {navbarOptions.map(option => (
                         <li key={option.title}>
