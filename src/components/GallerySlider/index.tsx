@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import './styles.css';
 
-interface SliderProps {
+interface GallerySliderProps {
     slides?: string[];
 }
 
-export default function Slider({ slides = [] }: SliderProps) {
+export default function GallerySlider({ slides = [] }: GallerySliderProps) {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
@@ -23,8 +23,8 @@ export default function Slider({ slides = [] }: SliderProps) {
     return slides.length === 0 ? (
         <></>
     ) : (
-        <div className="slider">
-            <div className="slider-container">
+        <div className="gallery-slider">
+            <div className="gallery-slider-container">
                 {slides.map((slide, index) => (
                     <img
                         key={index}
@@ -35,7 +35,7 @@ export default function Slider({ slides = [] }: SliderProps) {
                     />
                 ))}
             </div>
-            <div className="slider-nav">
+            <div className="gallery-slider-nav">
                 {slides.map((slide, index) => (
                     <a
                         key={index}

@@ -1,6 +1,6 @@
 import { IoClose, IoLogoGithub, IoDesktopSharp } from 'react-icons/io5';
 import { Project } from '../../services/project';
-import Slider from '../Slider';
+import GallerySlider from '../GallerySlider';
 import './styles.css';
 
 interface ProjectModalProps {
@@ -19,7 +19,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </button>
                 </div>
                 <div className="project-modal-gallery">
-                    <Slider slides={project.gallery} />
+                    <GallerySlider slides={project.gallery} />
                 </div>
                 <div className="project-modal-content">
                     <div className="col pmc-separator">

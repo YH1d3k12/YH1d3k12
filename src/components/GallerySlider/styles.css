@@ -1,15 +1,15 @@
-.slider {
+.gallery-slider {
     position: relative;
     margin: 0 auto;
     width: 100%;
 }
 
-.slider-container {
+.gallery-slider-container {
     display: flex;
     aspect-ratio: 16/9;
 }
 
-.slider-container img {
+.gallery-slider-container img {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,7 +22,7 @@
 }
 
 /*------------------------- Slider Location -------------------------*/
-.slider-nav {
+.gallery-slider-nav {
     display: flex;
     position: absolute;
     bottom: 15px;
@@ -33,7 +33,7 @@
     z-index: 1;
 }
 
-.slider-nav a {
+.gallery-slider-nav a {
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -44,12 +44,12 @@
     cursor: pointer;
 }
 
-.slider-nav a.active {
+.gallery-slider-nav a.active {
     opacity: 1 !important;
 }
 
 @media (max-width: 640px) {
-    .slider-nav a {
+    .gallery-slider-nav a {
         width: 6px;
         height: 6px;
     }
