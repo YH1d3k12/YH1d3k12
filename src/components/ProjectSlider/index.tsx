@@ -15,6 +15,10 @@ export default function ProjectSlider({
     const [cardsPerPage, setCardsPerPage] = useState(3);
     const maxIndex = Math.max(0, projects.length - cardsPerPage);
 
+    useEffect(() => {
+        setCurrentIndex(0);
+    }, [projects]);
+
     const handlePrev = () => {
         setCurrentIndex(prev => Math.max(prev - cardsPerPage, 0));
     };
