@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ProjectCard from '../ProjectCard';
+import ProjectSlider from '../ProjectSlider';
 import ProjectModal from '../ProjectModal';
 import projects from '../../data/projects';
 import './styles.css';
@@ -56,13 +56,10 @@ export default function ProjectSection() {
                 </div>
             </div>
             <div className="project-section-container">
-                {filteredProjects.map((project, _) => (
-                    <ProjectCard
-                        key={project.id}
-                        project={project}
-                        onClick={() => setSelectedProject(project)}
-                    />
-                ))}
+                <ProjectSlider
+                    projects={filteredProjects}
+                    onProjectClick={setSelectedProject}
+                />
             </div>
             {selectedProject && (
                 <ProjectModal

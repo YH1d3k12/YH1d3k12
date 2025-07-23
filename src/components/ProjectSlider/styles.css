@@ -1,0 +1,16 @@
+.project-slider-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-slider {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.project-slide-button {
+    background-color: transparent;
+    cursor: pointer;
+}
