@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { IoClose, IoLogoGithub, IoDesktopSharp } from 'react-icons/io5';
 import { Project } from '../../services/project';
 import GallerySlider from '../GallerySlider';
@@ -9,11 +10,13 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
+    const { t } = useTranslation();
+
     return (
         <div className="modal-veil">
             <div className="project-modal">
                 <div className="project-modal-title">
-                    <h2>{project.title}</h2>
+                    <h2>{t(project.title)}</h2>
                     <button onClick={onClose}>
                         <IoClose size={24} />
                     </button>
@@ -24,14 +27,14 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 <div className="project-modal-content">
                     <div className="col pmc-separator">
                         <div>
-                            <h3>About</h3>
-                            <p>{project.detailedDescription}</p>
+                            <h3>{t('projectModal.about')}</h3>
+                            <p>{t(project.detailedDescription)}</p>
                         </div>
                         <div>
-                            <h3>Features</h3>
+                            <h3>{t('projectModal.features')}</h3>
                             <ul>
                                 {project.features.map((feature, index) => (
-                                    <li key={index}>{feature}</li>
+                                    <li key={index}>{t(feature)}</li>
                                 ))}
                             </ul>
                         </div>

@@ -1,0 +1,39 @@
+{
+    "navbar": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "about": {
+        "name": "sou Djalma",
+        "title": "Desenvolvedor Fullstack",
+        "description": "Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum é o texto padrão da indústria desde os anos 1500...",
+        "location": "Joinville, SC - Brasil"
+    },
+    "projectSection": {
+        "title": "Meus Projetos",
+        "subtitle": "Projetos que refletem minha criatividade e experiência.",
+        "clearBtn": "Limpar Filtros"
+    },
+    "projectModal": {
+        "about": "Sobre o Projeto",
+        "features": "Recursos"
+    },
+    "footer": {
+        "title": "Contato",
+        "description": "Entre em contato para discutir projetos, colaborações ou apenas para dizer olá!"
+    },
+    "projects": {
+        "poweb": {
+            "title": "Poweb",
+            "description": "Sistema de administração escolar.",
+            "detailedDescription": "Sistema de administração escolar desenvolvido com React, Node e Typescript, criado para substituir o sistema legado e melhorar os processos das instituições da rede Senac. O projeto conta com mais de 20 módulos com operações completas de CRUD, incluindo funcionalidades como painel de recados, gerenciamento de turmas, ambientes e despesas.",
+            "features": {
+                "auth": "Integração com sistema de autenticação por API externa.",
+                "profile": "Gerenciamento de perfis de usuário com níveis personalizados de permissão.",
+                "files": "Envio de arquivos em painel de recados.",
+                "pagination": "Paginação e filtros de pesquisa."
+            }
+        }
+    }
+}

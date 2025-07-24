@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
     IoLogoGithub,
     IoMail,
@@ -7,14 +8,13 @@ import {
 import './styles.css';
 
 export default function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer id="contact" className="footer section-padding">
             <div>
-                <h2 className="footer-title">Contact</h2>
-                <p className="footer-description">
-                    Feel free to reach out to me through any of the platforms
-                    below.
-                </p>
+                <h2 className="footer-title">{t('footer.title')}</h2>
+                <p className="footer-description">{t('footer.description')}</p>
                 <div className="footer-icons">
                     <ul>
                         <li>

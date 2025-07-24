@@ -1,0 +1,27 @@
+{
+    "about": {
+        "name": "I'm Djalma",
+        "title": "Fullstack Developer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+        "location": "Joinville, SC - Brazil"
+    },
+    "projectSection": {
+        "title": "My Projects",
+        "subtitle": "Projects that reflect my creativity and experience.",
+        "clearBtn": "Clear"
+    },
+    "projects": {
+        "poweb": {
+            "title": "Poweb",
+            "description": "Plataforma completa de e-commerce com painel administrativo",
+            "detailedDescription": "Uma plataforma de e-commerce completa desenvolvida com React e Node.js, incluindo sistema de pagamentos, gerenciamento de produtos, carrinho de compras e painel administrativo.",
+            "features": {
+                "auth": "Sistema de autenticação completo",
+                "payment": "Integração com gateway de pagamento",
+                "adminPanel": "Painel administrativo para gerenciar produtos",
+                "cart": "Carrinho de compras persistente",
+                "reviews": "Sistema de avaliações e comentários"
+            }
+        }
+    }
+}

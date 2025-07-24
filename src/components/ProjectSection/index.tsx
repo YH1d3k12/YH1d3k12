@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import ProjectSlider from '../ProjectSlider';
 import ProjectModal from '../ProjectModal';
 import projects from '../../data/projects';
@@ -7,6 +8,7 @@ import './styles.css';
 const allTags = Array.from(new Set(projects.flatMap(project => project.tags)));
 
 export default function ProjectSection() {
+    const { t } = useTranslation();
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
     const [selectedProject, setSelectedProject] = useState<
         (typeof projects)[0] | null
@@ -28,11 +30,8 @@ export default function ProjectSection() {
     return (
         <section id="project" className="project-section section-padding">
             <div className="project-section-text">
-                <h2>My Projects</h2>
-                <p>
-                    lorem ipsum alguma coisa de texto aqui só para preencher e
-                    ver como fica no layout
-                </p>
+                <h2>{t('projectSection.title')}</h2>
+                <p>{t('projectSection.subtitle')}</p>
                 <div className="project-tag-container">
                     {allTags.map(tag => (
                         <button
@@ -50,7 +49,7 @@ export default function ProjectSection() {
                             onClick={() => setSelectedTags([])}
                             className="project-tag-clear-button"
                         >
-                            Clear Tags
+                            {t('projectSection.clearBtn')}
                         </button>
                     )}
                 </div>

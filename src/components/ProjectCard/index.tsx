@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Project } from '../../services/project';
 import './styles.css';
 
@@ -7,6 +8,8 @@ export interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, onClick }: ProjectCardProps) {
+    const { t } = useTranslation();
+
     return (
         <div onClick={onClick}>
             <div className="project-card">
@@ -14,7 +17,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
                     <img src={project.image} alt="Project Thumbnail" />
                 </div>
                 <div className="project-card-content">
-                    <h3>{project.title}</h3>
+                    <h3>{t(project.title)}</h3>
                     {project.tags && (
                         <div className="project-card-tags">
                             {project.tags.map((tag, tagIndex) => (
@@ -27,7 +30,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
                             ))}
                         </div>
                     )}
-                    <p>{project.description}</p>
+                    <p>{t(project.description)}</p>
                 </div>
             </div>
         </div>

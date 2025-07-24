@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import ChangeLanguageButton from '../ChangeLanguageButton';
 import navbarOptions from './navbarOptions';
 import './styles.css';
 
 export default function Navbar() {
+    const { t } = useTranslation();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -32,8 +35,8 @@ export default function Navbar() {
             const yOffset = -80;
             const y = element.getBoundingClientRect().top + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
-            setIsMobileMenuOpen(false);
         }
+        setIsMobileMenuOpen(false);
     };
 
     const handleToggle = () => {
@@ -51,9 +54,10 @@ export default function Navbar() {
                             className="navbar-link"
                             onClick={() => scrollToSection(option.path)}
                         >
-                            {option.title}
+                            {t(option.title)}
                         </button>
                     ))}
+                    <ChangeLanguageButton />
                 </div>
                 <div className="navbar-burguer-container">
                     <input
@@ -78,10 +82,11 @@ export default function Navbar() {
                                 onClick={() => scrollToSection(option.path)}
                             >
                                 {option.icon}
-                                {option.title}
+                                {t(option.title)}
                             </button>
                         </li>
                     ))}
+                    <ChangeLanguageButton />
                 </ul>
             </nav>
         </header>
