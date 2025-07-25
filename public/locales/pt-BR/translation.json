@@ -7,7 +7,7 @@
     "about": {
         "name": "sou Djalma",
         "title": "Desenvolvedor Fullstack",
-        "description": "Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum é o texto padrão da indústria desde os anos 1500...",
+        "description": "Sou desenvolvedor com 4 anos de experiência, atuo com criação de sistemas do zero e já desenvolvi soluções inteligentes para marcas. Gosto de desafios – tanto que conquistei posições de pódio em hackathons regionais e nacionais. Fora do trabalho, sou apaixonado por RPG de mesa, o que me ajuda a treinar criatividade e colaboração. Se você busca soluções criativas e comprometidas, vamos conversar e fazer acontecer!",
         "location": "Joinville, SC - Brasil"
     },
     "projectSection": {
@@ -31,7 +31,7 @@
             "features": {
                 "auth": "Integração com sistema de autenticação por API externa.",
                 "profile": "Gerenciamento de perfis de usuário com níveis personalizados de permissão.",
-                "files": "Envio de arquivos em painel de recados.",
+                "files": "Upload e download de arquivos em painel de recados.",
                 "pagination": "Paginação e filtros de pesquisa."
             }
         }

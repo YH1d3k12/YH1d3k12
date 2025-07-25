@@ -1,5 +1,9 @@
 import { Project } from '../services/project';
 import placeholder from '../assets/gallery/placeholder.svg';
+import powebPortrait from '../assets/gallery/poweb.jpeg';
+import powebA from '../assets/gallery/powebA.jpeg';
+import powebB from '../assets/gallery/powebB.jpeg';
+import powebC from '../assets/gallery/powebC.jpeg';
 import a from '../assets/gallery/a.jpg';
 import b from '../assets/gallery/b.jpeg';
 import c from '../assets/gallery/c.jpeg';
@@ -9,7 +13,7 @@ const projects: Project[] = [
         id: 1,
         title: 'projects.poweb.title',
         description: 'projects.poweb.description',
-        image: placeholder,
+        image: powebPortrait,
         tags: ['React', 'Node', 'TypeScript'],
         detailedDescription: 'projects.poweb.detailedDescription',
         features: [
@@ -20,7 +24,7 @@ const projects: Project[] = [
         ],
         githubUrl: '',
         liveUrl: '',
-        gallery: [a, b, c],
+        gallery: [powebA, powebB, powebC],
     },
 ];
 
