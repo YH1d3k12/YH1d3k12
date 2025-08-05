@@ -34,9 +34,10 @@
 }
 
 .gallery-slider-nav a {
+    border: solid 2px var(--jet);
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
 
     background-color: #fff;
     opacity: 0.75;

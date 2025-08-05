@@ -60,6 +60,7 @@
 
 .project-modal-content {
     display: flex;
+    width: 100%;
 }
 
 .project-modal-content h3 {
@@ -93,10 +94,11 @@
 .project-link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 5px;
     margin: 20px auto;
     border-radius: 8px;
+    padding: 0 10px;
     width: 80%;
     height: 50px;
 
@@ -113,7 +115,7 @@
     background-color: var(--royal-blue);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .project-modal-content {
         flex-direction: column;
     }
