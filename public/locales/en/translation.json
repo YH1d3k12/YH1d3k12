@@ -1,8 +1,13 @@
 {
+    "navbar": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
     "about": {
         "name": "I'm Djalma",
         "title": "Fullstack Developer",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+        "description": "I’m a developer with 4 years of experience, working on building systems from scratch and creating smart solutions for brands. I enjoy challenges — I’ve even earned podium positions in regional and national hackathons. Outside of work, I’m passionate about tabletop RPGs, which helps me sharpen creativity and teamwork. If you’re looking for creative and committed solutions, let’s talk and make it happen!",
         "location": "Joinville, SC - Brazil"
     },
     "projectSection": {
@@ -10,17 +15,24 @@
         "subtitle": "Projects that reflect my creativity and experience.",
         "clearBtn": "Clear"
     },
+    "projectModal": {
+        "about": "About the Project",
+        "features": "Features"
+    },
+    "footer": {
+        "title": "Contact",
+        "description": "Get in touch to discuss projects, collaborations, or just to say hello!"
+    },
     "projects": {
         "poweb": {
             "title": "Poweb",
-            "description": "Plataforma completa de e-commerce com painel administrativo",
-            "detailedDescription": "Uma plataforma de e-commerce completa desenvolvida com React e Node.js, incluindo sistema de pagamentos, gerenciamento de produtos, carrinho de compras e painel administrativo.",
+            "description": "School administration system.",
+            "detailedDescription": "School administration system developed with React, Node, and TypeScript, created to replace the legacy system and improve the processes of institutions within the Senac network. The project includes over 20 modules with complete CRUD operations, including features such as a message board, class management, environments, and expenses.",
             "features": {
-                "auth": "Sistema de autenticação completo",
-                "payment": "Integração com gateway de pagamento",
-                "adminPanel": "Painel administrativo para gerenciar produtos",
-                "cart": "Carrinho de compras persistente",
-                "reviews": "Sistema de avaliações e comentários"
+                "auth": "Integration with an external API-based authentication system.",
+                "profile": "User profile management with customizable permission levels.",
+                "files": "File upload and download within the message board.",
+                "pagination": "Pagination and search filters."
             }
         }
     }
