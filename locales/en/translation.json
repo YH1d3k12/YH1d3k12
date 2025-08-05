@@ -34,6 +34,16 @@
                 "files": "File upload and download within the message board.",
                 "pagination": "Pagination and search filters."
             }
+        },
+        "iconsCharacterSheet": {
+            "title": "Icons Character Sheet",
+            "description": "Digital character sheet for Superhero RPG.",
+            "detailedDescription": "Digital character sheet developed with React and TypeScript, designed to enhance the experience of RPG players. The application allows users to create, edit, and share character sheets intuitively, with local storage and an interface styled like a secret file folder for greater immersion. Users can manage attributes, skills, and equipment with ease, making the game more organized and engaging.",
+            "features": {
+                "characterContext": "Global context for character state management.",
+                "attributeCalculation": "Automatic calculation of derived attributes.",
+                "characterFile": "Export and import character sheets in JSON format."
+            }
         }
     }
 }

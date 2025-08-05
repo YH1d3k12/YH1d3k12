@@ -34,6 +34,16 @@
                 "files": "Upload e download de arquivos em painel de recados.",
                 "pagination": "Paginação e filtros de pesquisa."
             }
+        },
+        "iconsCharacterSheet": {
+            "title": "Icons Character Sheet",
+            "description": "Ficha de personagem digital para RPG de Super Heróis.",
+            "detailedDescription": "Ficha de personagem digital desenvolvida com React e TypeScript, pensada para facilitar a experiência de jogadores de RPG. A aplicação permite criar, editar e compartilhar fichas de forma intuitiva, com armazenamento local e uma interface estilizada como uma pasta de arquivos secretos para maior imersão. É possível gerenciar atributos, habilidades e equipamentos com praticidade, tornando o jogo mais organizado e envolvente.",
+            "features": {
+                "characterContext": "Contexto global para gerenciamento de estado da ficha.",
+                "attributeCalculation": "Cálculo automático de atributos derivados.",
+                "characterFile": "Exportação e importação de fichas em formato JSON."
+            }
         }
     }
 }
