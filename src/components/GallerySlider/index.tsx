@@ -36,7 +36,7 @@ export default function GallerySlider({ slides = [] }: GallerySliderProps) {
                 ))}
             </div>
             <div className="gallery-slider-nav">
-                {slides.map((slide, index) => (
+                {slides.map((_, index) => (
                     <a
                         key={index}
                         onClick={() => setCurrentSlide(index)}

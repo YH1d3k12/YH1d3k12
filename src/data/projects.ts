@@ -1,12 +1,8 @@
 import { Project } from '../services/project';
-import placeholder from '../assets/gallery/placeholder.svg';
 import powebPortrait from '../assets/gallery/poweb.jpeg';
 import powebA from '../assets/gallery/powebA.jpeg';
 import powebB from '../assets/gallery/powebB.jpeg';
 import powebC from '../assets/gallery/powebC.jpeg';
-import a from '../assets/gallery/a.jpg';
-import b from '../assets/gallery/b.jpeg';
-import c from '../assets/gallery/c.jpeg';
 
 const projects: Project[] = [
     {

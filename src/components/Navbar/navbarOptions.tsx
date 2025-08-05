@@ -1,10 +1,5 @@
 import { JSX } from 'react';
-import {
-    IoHome,
-    IoImagesSharp,
-    IoPersonSharp,
-    IoCallSharp,
-} from 'react-icons/io5';
+import { IoImagesSharp, IoPersonSharp, IoCallSharp } from 'react-icons/io5';
 
 export interface MenuOption {
     title: string;
