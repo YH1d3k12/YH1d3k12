@@ -18,7 +18,7 @@ const LoadRoutes = (routes: RouteConfig[]) => {
 
 export default function AppRoutes() {
     return (
-        <BrowserRouter basename="/portfolio/">
+        <BrowserRouter basename="/YH1d3k12/">
             {/* <Suspense fallback={<LoadingPage />}> </Suspense>*/}
             <Routes>
                 <Route path="/" element={<Layout />}>
