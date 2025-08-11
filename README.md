@@ -5,11 +5,11 @@ I'm a passionate **Full-Stack Developer** from **Brazil** with a strong focus on
 
 ### 📊 GitHub Stats
 
-![Your Name's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&hide_border=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YH1d3k12&show_icons=true&hide_border=true&theme=radical)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&hide_border=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YH1d3k12&layout=compact&hide_border=true&theme=radical)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=yourusername&hide_border=true&theme=radical)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YH1d3k12&hide_border=true&theme=radical)
 
 ---
 
